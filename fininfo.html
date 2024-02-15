@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Information</title>
+<link href="fininfo.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Calistoga' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Cantata One' rel='stylesheet'>
+</head>
+<body>
+    <div class="top"><img src="imgfztop.jpeg" style="width: 1000px; height: 390px;"></div>
+    <div id="nav">
+        <ul>
+            <li><a href=final.html>Home</a></li>
+            <li><a href=fininfo.html>Info</a></li>
+            <li><a href=finfood.html>Food</a></li>
+            <li><a href=finland.html>Landscape</a></li>
+            <li><a href=fincom.html>Comment</a></li>
+        </ul>
+    </div>
+    <div class="container" style="width: 1000px; height: 550px;">
+        <div class="infoimg">
+            <img src = "imgfinin.jpeg" style="width: 400px; height: 500px">
+        </div>
+        <div class="text">
+            <h3>Fuzhou</h3><br>
+            Fuzhou, referred to as "Rong" for short, also known as Rongcheng, was called Mindu in ancient times. 
+            It is a prefecture-level city, provincial capital, and large-scale city under the jurisdiction of Fujian Province.
+            It is located in the eastern part of Fujian Province, the lower reaches of the Minjiang River and the coastal areas. 
+            Fuzhou has a typical subtropical monsoon climate, warm and humid, with evergreens all year round. As of the end of 2020,
+            the city has jurisdiction over 6 municipal districts, 6 counties, and 1 county-level city, with a total area of 11,968 
+            square kilometers. <br>
+            <p> </p>    
+            Fuzhou is the core city of the Fuzhou metropolitan area, one of the central cities of the economic
+            zone on the west coast of the Taiwan Strait approved by the State Council, and a riverside and seaside
+            ecological garden city. It is the resident of the Chinese People's Liberation Army's Eastern Theater Command,
+            an important city on the southeast coast of China, the first batch of coastal cities open to the outside world,
+            a demonstration zone for marine economic development, a gateway to the Maritime Silk Road, and a component of 
+            the China (Fujian) Free Trade Pilot Zone.<br>
+        </div>
+    </div>
+    <div class="container2" style="width: 1000px; height: 550px;">
+        <div class="text">
+            <h3>Fuzhou</h3><br>
+            Fuzhou is a famous national historical and cultural city. It was first named "Ye" in the Qin and Han Dynasties, 
+            and then changed its name to "Fuzhou" because of a Fushan mountain in its territory. Founded in 202 BC, it has 
+            been the political center of Fujian for a long time in history. Mawei, Fuzhou is the cradle of the modern Chinese 
+            navy and the birthplace of Chinese shipping culture; it has won titles such as China's Excellent Tourism City, 
+            National Sanitary City, Riverside and Coastal Ecological Garden City, National Model City for Environmental 
+            Protection, National Model City for Double Support, and National Civilized City.<br>
+            <p> </p>
+            In 2021, Fuzhou's regional GDP will be 1,132.448 billion yuan, an increase of 8.4% over the previous year at 
+            comparable prices; the added value of the primary industry will be 63.703 billion yuan, an increase of 6.0%; 
+            the added value of the secondary industry will be 428.980 billion yuan, an increase of 7.3%; The added value 
+            of the tertiary industry was 639.766 billion yuan, an increase of 9.3%.
+        </div>
+        <div class="infoimg">
+            <img src = "imgfininfo.jpeg" style="width: 400px; height: 500px">
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

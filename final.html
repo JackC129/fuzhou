@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link href="final.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h2>↓Scroll Down↓<br>↓To Learn More↓</h2>
+    <div class="big">
+        <span>FuZhou</span>
+    </div>
+    <h1>
+        Welcome to FuZhou<br>↓Choose What You Want To Know↓
+        <a href="fininfo.html">Info</a>
+        <a href="finfood.html">Food</a>
+        <a href="finland.html">Landscape</a>
+        <a href="fincom.html">Comment</a>
+    </h1>
+    <script type="text/javascript">
+        const big=document.querySelector(".big");
+        document.addEventListener("scroll",function(){
+            const scrollY=window.scrollY;
+            if(scrollY!=0){
+                big.style.backgroundPosition="calc(50% + "+scrollY+"px) calc(50% + "+scrollY+"px)";
+            }else{
+                big.style.backgroundPosition="";
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Food</title>
+<link href="fin.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Calistoga' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Cantata One' rel='stylesheet'>
+</head>
+<body>
+    <div class="top"><img src="imgfzftop.jpeg" style="width: 1000px; height: 390px;"></div>
+    <div id="nav">
+        <ul>
+            <li><a href=final.html>Home</a></li>
+            <li><a href=fininfo.html>Info</a></li>
+            <li><a href=finfood.html>Food</a></li>
+            <li><a href=finland.html>Landscape</a></li>
+            <li><a href=fincom.html>Comment</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="text1">
+            <img src="imgfinyw.jpeg">
+            <p>
+                <strong>Fuzhou Fish Ball</strong><br> Fuzhou fish ball is a traditional local dish in Fuzhou City, which belongs to Fujian cuisine; 
+                the dish has natural, nutritious and healthy food characteristics. 
+            </p>
+        </div>
+        <div class="text2">
+            <p>
+                <strong>Meat Yan</strong><br> Meat Yan, also known as Taiping Yan, is a traditional snack in Fuzhou City, Fujian Province. 
+                It belongs to Fujian cuisine-Fuzhou cuisine. Eating "Taipingyan" is to take its auspiciousness of "Taiping" and "Ping An”.
+            </p>
+            <img src="imgfinry.jpg">
+        </div>
+        <div class="text3">
+            <img src="imgfingb.jpeg">
+            <p>
+                <strong>GuoBian Paste</strong><br> Ding Bian Paste, also known as Guo Bian Paste and Ding Bian Chui, is a well-known specialty 
+                and snack in Fujian Province. Fuzhou pot edge paste is usually served with sea oyster cakes,
+                shrimp crisps, taro cakes, fried dough sticks, fried buns, etc. It is a good local breakfast. 
+                It has been spread to Hainan, Taiwan and other places. Anyone who grew up in Fujian or lived 
+                in Fujian for a long time loves to eat it. 
+            </p>
+        </div>
+        <div class="text4">
+            <p>
+                <strong>Taro Paste</strong><br> Taro paste, also called minced taro, is one of the traditional sweets in Fujian cuisine.
+                It is made from boiled and smashed taro, red dates, cherries, melon seeds, winter melon 
+                sugar, white sugar, Osmanthus and cooked lard. Mashed taro is often served as the finale 
+                dessert at Fuzhou banquets.
+            </p>
+            <img src="imgfinyn.jpeg">
+        </div>
+        <div class="text5">
+            <img src="imgfinftq.jpeg">
+            <p>
+                <strong>Fotiaoqiang</strong><br> Fotiaoqiang, also known as Fushouquan, is a famous dish in Fuzhou City, Fujian Province, 
+                belonging to Fujian cuisine. According to legend, this dish was developed by Zheng Chunfa, 
+                the owner of Juchunyuan restaurant in Fuzhou during the Daoguang period of the Qing Dynasty. 
+                According to Mr. Fei Xiaotong, the person who invented this dish was a group of beggars.
+            </p>
+        </div>
+        <div class="text6">
+            <p>
+                <strong>Sea Oyster Cake</strong><br> Sea oyster cake, commonly known as oyster cake, is a Fuzhou-style delicacy. Sea oyster cake 
+                is made of rice flour (pulp) and soybean flour (pulp), and belongs to fried snacks. The taste 
+                is crisp and delicious, the shape is round, the color is golden, the shell is crispy and the 
+                filling is fresh, and it can be eaten alone as a snack. It can also be served with tripod 
+                side paste, porridge, etc.
+            </p>
+            <img src="imgfinhlb.jpeg">
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

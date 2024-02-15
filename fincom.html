@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Comment</title>
+<link href="fincom.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet'>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href=final.html>Home</a></li>
+            <li><a href=fininfo.html>Info</a></li>
+            <li><a href=finfood.html>Food</a></li>
+            <li><a href=finland.html>Landscape</a></li>
+            <li><a href=fincom.html>Comment</a></li>
+        </ul>
+    </div>
+    <div class="comment-box">
+        <h2>Comment Here Give Some Suggestions</h2>
+        <input type="text" id="name" name="full_name" placeholder="Enter name...">
+        <input type="email" id="email" name="email" placeholder="Enter email...">
+        <textarea name="comment" id="msg" placeholder="Type your comment here..."></textarea>
+        <button type="submit" id="btn" onclick="message()">Submit Comment</button>
+        <div class="message">
+            <div class="success" id="success">Your Message Was Successfully Submitted!</div>
+            <div class="danger" id="danger">Failed! Can't Be Empty!</div>
+        </div>
+    </div>
+    <script>
+        function message(){
+            var Name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var msg = document.getElementById("msg");
+            const success = document.getElementById("success")
+            const danger = document.getElementById("danger")
+            if(Name.value === '' || email.value === '' || msg.value === ''){
+                danger.style.display = 'block';
+            }else{
+                setTimeout(() => {
+                    Name.value = '';
+                    email.value = '';
+                    msg.value = '';
+                }, 2000);
+                success.style.display = 'block';
+            }
+            setTimeout(() => {
+                danger.style.display = 'none';
+                success.style.display = 'none';
+            }, 4000);
+        }
+        msg.addEventListener("keyup", function(event){
+                if (event.keyCode == 13){
+                    btn.click()
+                }
+            })
+    </script>
+</body>
+</html>

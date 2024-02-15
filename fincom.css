@@ -1,0 +1,126 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #a3b4c4;
+}
+#nav{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+}
+li a {
+    display: block;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding: 13px 17px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Belgrano'
+}
+li a:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+.comment-box{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: #696D7D;
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: 60px;
+    margin-top: 20px;
+}
+.comment-box h2{
+    margin-bottom: 15px;
+    color: #C9DAEA;
+    font-family: 'Belgrano';
+}
+.comment-box input{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #E7F59E;
+}
+.comment-box input:focus{
+    border: 1px solid #0C0910;
+    outline: 0;
+}
+.comment-box textarea{
+    width: 100%;
+    height: 200px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #E7F59E;
+}
+.comment-box textarea:focus{
+    border: 1px solid #0C0910;
+    outline: 0;
+}
+.comment-box button{
+    border: 0;
+    padding: 10px 20px;
+    margin-left: 20px;
+    background: #CBDF90;
+    border-radius: 10px;
+    font-family: 'Belgrano';
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.comment-box button:hover{
+    background: #70807e;
+}
+.message{
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Belgrano';
+}
+.message .success{
+    font-size: 20px;
+    color: #00ff48;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+.message .danger{
+    font-size: 20px;
+    color: #f20014;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+@keyframes buttons{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
